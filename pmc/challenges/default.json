@@ -28,8 +28,7 @@
             "operation-type": "cluster-health",
             "index": "pmc",
             "request-params": {
-              "wait_for_status": "{{cluster_health | default('green')}}",
-              "wait_for_no_relocating_shards": "true"
+              "wait_for_status": "{{cluster_health | default('green')}}"
             },
             "retry-until-success": true
           }
@@ -134,8 +133,7 @@
             "operation-type": "cluster-health",
             "index": "pmc",
             "request-params": {
-              "wait_for_status": "{{cluster_health | default('green')}}",
-              "wait_for_no_relocating_shards": "true"
+              "wait_for_status": "{{cluster_health | default('green')}}"
             },
             "retry-until-success": true
           }
@@ -200,8 +198,7 @@
             "operation-type": "cluster-health",
             "index": "pmc",
             "request-params": {
-              "wait_for_status": "{{cluster_health | default('green')}}",
-              "wait_for_no_relocating_shards": "true"
+              "wait_for_status": "{{cluster_health | default('green')}}"
             },
             "retry-until-success": true
           }
@@ -266,8 +263,7 @@
             "operation-type": "cluster-health",
             "index": "pmc",
             "request-params": {
-              "wait_for_status": "{{cluster_health | default('green')}}",
-              "wait_for_no_relocating_shards": "true"
+              "wait_for_status": "{{cluster_health | default('green')}}"
             },
             "retry-until-success": true
           }
