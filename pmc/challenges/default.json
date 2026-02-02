@@ -54,19 +54,6 @@
           "name": "refresh-after-force-merge",
           "operation": "refresh"
         },
-        {
-          "name": "wait-until-merges-finish",
-          "operation": {
-            "operation-type": "index-stats",
-            "index": "_all",
-            "condition": {
-              "path": "_all.total.merges.current",
-              "expected-value": 0
-            },
-            "retry-until-success": true,
-            "include-in-reporting": false
-          }
-        },
         {# serverless-post-ingest-sleep-marker-start #}{%- if post_ingest_sleep|default(false) -%}
         {
           "name": "post-ingest-sleep",
@@ -160,19 +147,6 @@
         {
           "name": "refresh-after-force-merge",
           "operation": "refresh"
-        },
-        {
-          "name": "wait-until-merges-finish",
-          "operation": {
-            "operation-type": "index-stats",
-            "index": "_all",
-            "condition": {
-              "path": "_all.total.merges.current",
-              "expected-value": 0
-            },
-            "retry-until-success": true,
-            "include-in-reporting": false
-          }
         }
       ]
     },
@@ -222,19 +196,6 @@
         {
           "name": "refresh-after-force-merge",
           "operation": "refresh"
-        },
-        {
-          "name": "wait-until-merges-finish",
-          "operation": {
-            "operation-type": "index-stats",
-            "index": "_all",
-            "condition": {
-              "path": "_all.total.merges.current",
-              "expected-value": 0
-            },
-            "retry-until-success": true,
-            "include-in-reporting": false
-          }
         }
       ]
     },
@@ -287,19 +248,6 @@
         {
           "name": "refresh-after-force-merge",
           "operation": "refresh"
-        },
-        {
-          "name": "wait-until-merges-finish",
-          "operation": {
-            "operation-type": "index-stats",
-            "index": "_all",
-            "condition": {
-              "path": "_all.total.merges.current",
-              "expected-value": 0
-            },
-            "retry-until-success": true,
-            "include-in-reporting": false
-          }
         }
       ]
     }
